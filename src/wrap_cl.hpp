@@ -4056,10 +4056,10 @@ namespace pyopencl
     if (status_code != CL_SUCCESS)
       throw pyopencl::error("clCreateProgramWithBinary", status_code);
 
-    /*
+    
     for (int i = 0; i < num_devices; ++i)
       printf("%d:%d\n", i, binary_statuses[i]);
-      */
+    
 
     try
     {
