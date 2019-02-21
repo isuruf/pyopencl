@@ -5,4 +5,4 @@ osx_image: xcode10.2
 script:
   - pip install numpy pybind11 mako
   - pip install -e . --verbose
-  - python test.py
+  - PYOPENCL_CTX=0 python test.py
