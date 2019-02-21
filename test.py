@@ -1,5 +1,7 @@
 import pyopencl as cl
 import numpy as np
+import logging
+logging.basicConfig(level=logging.DEBUG)
 
 a_np = np.random.rand(50000).astype(np.float32)
 b_np = np.random.rand(50000).astype(np.float32)
