@@ -3,5 +3,6 @@ notifications:
 os: osx
 osx_image: xcode10.2
 script:
+  - pip install numpy pybind11 mako
   - pip install -e . --verbose
   - python test.py
