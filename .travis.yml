@@ -12,6 +12,7 @@ install:
   - conda update -q conda
   # Useful for debugging any issues with conda
   - conda info -a
+  - conda config --add channels conda-forge
   - conda create -n pyopencl pyopencl pocl
   - conda activate pyopencl
   - python -c "import pyopencl as cl;cl.create_some_context()"
