@@ -107,9 +107,8 @@ SEPARATOR = "-"*75
 def main():
     from setuptools import find_packages
     from aksetup_helper import (hack_distutils, get_config, setup,
-            check_pybind11, check_git_submodules, ExtensionUsingNumpy,
+            check_git_submodules, ExtensionUsingNumpy,
             get_pybind_include, PybindBuildExtCommand)
-    check_pybind11()
     check_git_submodules()
 
     hack_distutils()
@@ -246,7 +245,7 @@ def main():
                 ],
 
             setup_requires=[
-                "pybind11",
+                "pybind11>=2.5.0",
                 "numpy",
                 ],
 

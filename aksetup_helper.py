@@ -857,26 +857,6 @@ def check_git_submodules():
 
 # {{{ pybind11
 
-def check_pybind11():
-    try:
-        import pybind11  # noqa
-    except ImportError:
-        print(DASH_SEPARATOR)
-        print("Pybind11 is not installed.")
-        print(DASH_SEPARATOR)
-        print("Very likely, the build process after this message will fail.")
-        print("")
-        print("Simply press Ctrl+C and type")
-        print("python -m pip install pybind11")
-        print("to fix this. If you don't, the build will continue ")
-        print("in a few seconds.")
-        print("")
-        print("[1] https://pybind11.readthedocs.io/en/stable/")
-        print(DASH_SEPARATOR)
-
-        from aksetup_helper import count_down_delay
-        count_down_delay(delay=10)
-
 
 # {{{ (modified) boilerplate from https://github.com/pybind/python_example/blob/2ed5a68759cd6ff5d2e5992a91f08616ef457b5c/setup.py  # noqa
 
