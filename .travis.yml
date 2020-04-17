@@ -4,6 +4,7 @@ os: osx
 osx_image: xcode7.3
 
 install:
+  - mkdir tmp && cd tmp
   - wget https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh -O miniconda.sh;
   - bash miniconda.sh -b -p $HOME/miniconda
   - source "$HOME/miniconda/etc/profile.d/conda.sh"
